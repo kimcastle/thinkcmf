@@ -1,0 +1,117 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a>上傳設置</a></li>
+    </ul>
+    <form method="post" class="js-ajax-form margin-top-20" role="form" action="{:url('setting/uploadPost')}">
+        <div class="form-group">
+            <label>最大同時上傳文件數</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="max_files" title="最大同時上傳文件數" placeholder="最大同時上傳文件數"
+                           value="{$upload_setting.max_files|default=20}">
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+            <p class="help-block">多文件上傳時,用戶能最大同時上傳文件數,默認20個</p>
+        </div>
+        <div class="form-group">
+            <label>文件分塊上傳分塊大小</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="chunk_size" title="文件分塊上傳分塊大小KB,1M=1024KB"
+                           placeholder="文件分塊上傳分塊大小KB,1M=1024KB" value="{$upload_setting.chunk_size|default=512}">
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+            <p class="help-block">文件上傳采用分塊上傳,文件分塊大小默認512KB,可以根據服務器最大上傳限制設置此數值</p>
+        </div>
+        <div class="form-group">
+            <label>圖片文件</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="file_types[image][upload_max_filesize]"
+                           title="允許上傳大小KB,1M=1024KB" placeholder="允許上傳大小KB,1M=1024KB"
+                           value="{$upload_setting.file_types.image.upload_max_filesize|default=10240}">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control"
+                           name="file_types[image][extensions]"
+                           title="擴展名,以英文逗號分隔"
+                           placeholder="擴展名,以英文逗號分隔"
+                           value="{$upload_setting.file_types.image.extensions|default='jpg,jpeg,png,gif,bmp'}">
+                </div>
+            </div>
+            <p class="help-block">允許上傳大小默認為10240KB,1M=1024KB，允許上傳格式默認為jpg,jpeg,png,gif,bmp</p>
+        </div>
+        <div class="form-group">
+            <label>視頻文件</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control"
+                           name="file_types[video][upload_max_filesize]"
+                           title="允許上傳大小KB,1M=1024KB"
+                           placeholder="允許上傳大小KB,1M=1024KB"
+                           value="{$upload_setting.file_types.video.upload_max_filesize|default=10240}">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control"
+                           name="file_types[video][extensions]"
+                           title="擴展名,以英文逗號分隔"
+                           placeholder="擴展名,以英文逗號分隔"
+                           value="{$upload_setting.file_types.video.extensions|default='mp4,avi,wmv,rm,rmvb,mkv'}">
+                </div>
+            </div>
+            <p class="help-block">允許上傳大小默認為102400KB,1M=1024KB，允許上傳格式默認為mp4,avi,wmv,rm,rmvb,mkv</p>
+        </div>
+        <div class="form-group">
+            <label>音頻文件</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control"
+                           name="file_types[audio][upload_max_filesize]"
+                           title="允許上傳大小KB,1M=1024KB"
+                           placeholder="允許上傳大小KB,1M=1024KB"
+                           value="{$upload_setting.file_types.audio.upload_max_filesize|default=10240}">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control"
+                           name="file_types[audio][extensions]"
+                           title="擴展名,以英文逗號分隔"
+                           placeholder="擴展名,以英文逗號分隔"
+                           value="{$upload_setting.file_types.audio.extensions|default='mp3,wma,wav'}">
+                </div>
+            </div>
+            <p class="help-block">允許上傳大小默認為10240KB,1M=1024KB，允許上傳格式默認為mp3,wma,wav</p>
+        </div>
+        <div class="form-group">
+            <label>附件</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="file_types[file][upload_max_filesize]"
+                           title="允許上傳大小KB,1M=1024KB" placeholder="允許上傳大小KB,1M=1024KB"
+                           value="{$upload_setting.file_types.file.upload_max_filesize|default=10240}">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control"
+                           name="file_types[file][extensions]"
+                           title="擴展名,以英文逗號分隔"
+                           placeholder="擴展名,以英文逗號分隔"
+                           value="{$upload_setting.file_types.file.extensions|default='txt,pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar'}">
+                </div>
+            </div>
+            <p class="help-block">
+                允許上傳大小默認為10240KB,1M=1024KB，允許上傳格式默認為除以上文檔類型以外的其它常用文件,如：txt,pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar</p>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary js-ajax-submit">{:lang('SAVE')}</button>
+        </div>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>
