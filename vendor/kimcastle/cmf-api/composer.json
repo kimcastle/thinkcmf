@@ -1,15 +1,15 @@
 {
-    "name": "thinkcmf/cmf-api",
+    "name": "kimcastle/cmf-api",
     "description": "The ThinkCMF 5.1 Core Api Package",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "catman",
-            "email": "catman@thinkcmf.com"
+            "name": "kimcastle",
+            "email": "kimcastle002@163.com"
         }
     ],
     "require": {
-        "thinkcmf/cmf": "~5.1.0"
+        "kimcastle/cmf": "1.0.1"
     },
     "autoload": {
         "psr-4": {

@@ -1,11 +1,11 @@
 {
-    "name": "thinkcmf/cmf",
+    "name": "kimcastle/cmf",
     "description": "The ThinkCMF Core Package",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "catman",
-            "email": "catman@thinkcmf.com"
+            "name": "kimcastle",
+            "email": "kimcastle002@163.com"
         }
     ],
     "require": {

@@ -25,7 +25,7 @@ return array(
     'phpQueryPlugin_WebBrowser' => $vendorDir . '/electrolinux/phpquery/phpQuery/phpQuery/plugins/WebBrowser.php',
     'phpQueryPlugin_example' => $vendorDir . '/electrolinux/phpquery/phpQuery/phpQuery/plugins/example.php',
     'phpQueryPlugins' => $vendorDir . '/electrolinux/phpquery/phpQuery/phpQuery.php',
-    'think\\App' => $vendorDir . '/thinkcmf/cmf/src/App.php',
-    'think\\Log' => $vendorDir . '/thinkcmf/cmf/src/Log.php',
-    'think\\route\\dispatch\\Module' => $vendorDir . '/thinkcmf/cmf/src/route/dispatch/Module.php',
+    'think\\App' => $vendorDir . '/kimcastle/cmf/src/App.php',
+    'think\\Log' => $vendorDir . '/kimcastle/cmf/src/Log.php',
+    'think\\route\\dispatch\\Module' => $vendorDir . '/kimcastle/cmf/src/route/dispatch/Module.php',
 );

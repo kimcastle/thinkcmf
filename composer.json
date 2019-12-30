@@ -26,7 +26,7 @@
         "topthink/think-image": "^1.0",
         "kimcastle/cmf-app": "~1.0.1",
         "thinkcmf/cmf-install": "~5.1.0",
-        "thinkcmf/cmf-api": "~5.1.0"
+        "kimcastle/cmf-api": "1.0.1"
     },
     "extra": {
         "think-path": "vendor/thinkphp",

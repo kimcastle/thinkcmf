@@ -9,7 +9,7 @@ class ComposerStaticInit5bfecc6fb5e853e2f790c7db297fb8ee
     public static $files = array (
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '1cfd2761b63b0a29ed23657ea394cb2d' => __DIR__ . '/..' . '/topthink/think-captcha/src/helper.php',
-        '22ae91e0a0181f0ca9a02b9dde87e558' => __DIR__ . '/..' . '/thinkcmf/cmf/src/common.php',
+        'd0c214514293791846aad5643d82e97b' => __DIR__ . '/..' . '/kimcastle/cmf/src/common.php',
         '9b552a3cc426e3287cc811caefa3cf53' => __DIR__ . '/..' . '/topthink/think-helper/src/helper.php',
     );
 
@@ -85,7 +85,7 @@ class ComposerStaticInit5bfecc6fb5e853e2f790c7db297fb8ee
         ),
         'cmf\\' => 
         array (
-            0 => __DIR__ . '/..' . '/thinkcmf/cmf/src',
+            0 => __DIR__ . '/..' . '/kimcastle/cmf/src',
         ),
         'app\\install\\' => 
         array (
@@ -97,7 +97,7 @@ class ComposerStaticInit5bfecc6fb5e853e2f790c7db297fb8ee
         ),
         'api\\' => 
         array (
-            0 => __DIR__ . '/..' . '/thinkcmf/cmf-api/src',
+            0 => __DIR__ . '/..' . '/kimcastle/cmf-api/src',
         ),
         'PHPMailer\\PHPMailer\\' => 
         array (
@@ -135,9 +135,9 @@ class ComposerStaticInit5bfecc6fb5e853e2f790c7db297fb8ee
         'phpQueryPlugin_WebBrowser' => __DIR__ . '/..' . '/electrolinux/phpquery/phpQuery/phpQuery/plugins/WebBrowser.php',
         'phpQueryPlugin_example' => __DIR__ . '/..' . '/electrolinux/phpquery/phpQuery/phpQuery/plugins/example.php',
         'phpQueryPlugins' => __DIR__ . '/..' . '/electrolinux/phpquery/phpQuery/phpQuery.php',
-        'think\\App' => __DIR__ . '/..' . '/thinkcmf/cmf/src/App.php',
-        'think\\Log' => __DIR__ . '/..' . '/thinkcmf/cmf/src/Log.php',
-        'think\\route\\dispatch\\Module' => __DIR__ . '/..' . '/thinkcmf/cmf/src/route/dispatch/Module.php',
+        'think\\App' => __DIR__ . '/..' . '/kimcastle/cmf/src/App.php',
+        'think\\Log' => __DIR__ . '/..' . '/kimcastle/cmf/src/Log.php',
+        'think\\route\\dispatch\\Module' => __DIR__ . '/..' . '/kimcastle/cmf/src/route/dispatch/Module.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
